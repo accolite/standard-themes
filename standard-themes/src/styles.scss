@@ -1,0 +1,170 @@
+@import '~@angular/material/_theming.scss';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+body,
+html {
+	margin: 0 auto;
+    height: 100% !important;
+}
+
+.app-theme1-theme {
+    $my-app-primary: mat-palette($mat-grey, 100);
+    $my-app-accent: mat-palette($mat-grey, 500);
+    $my-app-warn: mat-palette($mat-grey, 900);
+    background: #f3ded9;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme2-theme {
+    $alternate-primary: mat-palette($mat-indigo, 100);
+    $alternate-accent: mat-palette($mat-indigo, 500);
+    $alternate-warn: mat-palette($mat-indigo, 900);
+    background: #f5f1e0;
+    p {
+        color: rgb(15, 5, 156);
+    }
+    $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent, $alternate-warn);
+    @include angular-material-theme($alternate-theme);}
+
+.app-theme3-theme {
+    $my-app-primary: mat-palette($mat-red, 100);
+    $my-app-accent: mat-palette($mat-red, 500);
+    $my-app-warn: mat-palette($mat-red, 900);
+    background: #d9f0f3;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme4-theme {
+    $my-app-primary: mat-palette($mat-green, 100);
+    $my-app-accent: mat-palette($mat-green, 500);
+    $my-app-warn: mat-palette($mat-green, 900);
+    background: #d0f5f5;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme5-theme {
+    $my-app-primary: mat-palette($mat-yellow, 100);
+    $my-app-accent: mat-palette($mat-yellow, 500);
+    $my-app-warn: mat-palette($mat-yellow, 900);
+    background: #feffff;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme6-theme {
+    $my-app-primary: mat-palette($mat-blue, 100);
+    $my-app-accent: mat-palette($mat-blue, 500);
+    $my-app-warn: mat-palette($mat-blue, 900);
+    background: #e7e3f1;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme7-theme {
+    $my-app-primary: mat-palette($mat-orange, 100);
+    $my-app-accent: mat-palette($mat-orange, 500);
+    $my-app-warn: mat-palette($mat-orange, 900);
+    background: #f5f2d1;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme8-theme {
+    $my-app-primary: mat-palette($mat-cyan, 100);
+    $my-app-accent: mat-palette($mat-cyan, 500);
+    $my-app-warn: mat-palette($mat-cyan, 900);
+    background: #d1d7e0;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme9-theme {
+    $my-app-primary: mat-palette($mat-lime, 100);
+    $my-app-accent: mat-palette($mat-lime, 500);
+    $my-app-warn: mat-palette($mat-lime, 900);
+    background: #94fad1;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme10-theme {
+    $my-app-primary: mat-palette($mat-pink, 100);
+    $my-app-accent: mat-palette($mat-pink, 500);
+    $my-app-warn: mat-palette($mat-pink, 900);
+    background: #AC9090;
+    div, small, a{
+        color: #ffffff;
+    }
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme11-theme {
+    $my-app-primary: mat-palette($mat-teal, 100);
+    $my-app-accent: mat-palette($mat-teal, 500);
+    $my-app-warn: mat-palette($mat-teal, 900);
+    background: #f5d6d6;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme12-theme {
+    $my-app-primary: mat-palette($mat-deep-orange, 100);
+    $my-app-accent: mat-palette($mat-deep-orange, 500);
+    $my-app-warn: mat-palette($mat-deep-orange, 900);
+    background: #b2c0c9;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme13-theme {
+    $my-app-primary: mat-palette($mat-amber, 100);
+    $my-app-accent: mat-palette($mat-amber, 500);
+    $my-app-warn: mat-palette($mat-amber, 900);
+    background: #f0d3b6;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+    
+.app-theme14-theme {
+    $my-app-primary: mat-palette($mat-blue-grey, 100);
+    $my-app-accent: mat-palette($mat-blue-grey, 500);
+    $my-app-warn: mat-palette($mat-blue-grey, 900);
+    background: #CCFF99;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme15-theme {
+    $my-app-primary: mat-palette($mat-brown, 100);
+    $my-app-accent: mat-palette($mat-brown, 500);
+    $my-app-warn: mat-palette($mat-brown, 900);
+    background: #8B7D7B	;
+    div, small, a{
+        color: #ffffff;
+    }
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+.app-theme16-theme {
+    $my-app-primary: mat-palette($mat-deep-purple, 100);
+    $my-app-accent: mat-palette($mat-deep-purple, 500);
+    $my-app-warn: mat-palette($mat-deep-purple, 900);
+    background: rgb(241, 213, 159);
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    @include angular-material-theme($my-app-theme);}
+
+    // p {
+    //     color: var(--color);
+    //   }
+      
+    //   h2 {
+    //     color: var(--color2);
+    //   }

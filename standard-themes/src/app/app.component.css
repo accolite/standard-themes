@@ -1,0 +1,228 @@
+.spacer {
+    flex: 1 1 auto;
+}
+
+.icon, .material-icons {
+    cursor: pointer;
+}
+
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.toptoolbar {
+  margin-left: -2px;
+}
+
+:not(#iconClass) {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.form-check-input {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.form-check-label {
+  margin-left: 15px;
+}
+
+.icon1 {
+  border-radius: 50px;
+  border-right-color: grey;
+  border-top-color: #f3ded9;
+  border-bottom-color: grey;
+  border-left-color: #f3ded9;
+  border-width: 19px;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+  }
+
+.icon2 {
+  border-radius: 50px;
+  border-right-color: indigo;
+  border-top-color: #f5f1e0;
+  border-bottom-color: indigo;
+  border-left-color: #f5f1e0;
+  border-width: 19px;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+}
+
+.icon3 {
+    border-radius: 50px;
+    border-right-color: red;
+    border-top-color: #d9f0f3;
+    border-bottom-color: red;
+    border-left-color: #d9f0f3;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+}
+
+.icon4 {
+  border-radius: 50px;
+  border-right-color: green;
+  border-top-color: #d0f5f5;
+  border-bottom-color: green;
+  border-left-color: #d0f5f5;
+  border-width: 19px;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+  }
+
+.icon5 {
+    border-radius: 50px;
+    border-right-color: yellow;
+    border-top-color: #feffff;
+    border-bottom-color: yellow;
+    border-left-color: #feffff;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon6 {
+    border-radius: 50px;
+    border-right-color: blue;
+    border-top-color: #e7e3f1;
+    border-bottom-color: blue;
+    border-left-color: #e7e3f1;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+}
+
+.icon7 {
+    border-radius: 50px;
+    border-right-color: orange;
+    border-top-color: #f5f2d1;
+    border-bottom-color: orange;
+    border-left-color: #f5f2d1;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon8 {
+    border-radius: 50px;
+    border-right-color: cyan;
+    border-top-color: #d1d7e0;
+    border-bottom-color: cyan;
+    border-left-color: #d1d7e0;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon9 {
+    border-radius: 50px;
+    border-right-color: lime;
+    border-top-color: #94fad1;
+    border-bottom-color: lime;
+    border-left-color: #94fad1;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon10 {
+    border-radius: 50px;
+    border-right-color: pink;
+    border-top-color: #AC9090;
+    border-bottom-color: pink;
+    border-left-color: #AC9090;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon11 {
+    border-radius: 50px;
+    border-right-color: teal;
+    border-top-color: #f5d6d6;
+    border-bottom-color: teal;
+    border-left-color: #f5d6d6;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon12 {
+    border-radius: 50px;
+    border-right-color: rgb(245, 186, 77);
+    border-top-color: #0099FF;
+    border-bottom-color: rgb(245, 186, 77);
+    border-left-color: #0099FF;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon13 {
+    border-radius: 50px;
+    border-right-color: #f0d3b6;
+    border-top-color: #f7b879;
+    border-bottom-color: #f0d3b6;
+    border-left-color: #f7b879;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon14 {
+    border-radius: 50px;
+    border-right-color: grey;
+    border-top-color: #CCFF99;
+    border-bottom-color: grey;
+    border-left-color: #CCFF99;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon15 {
+    border-radius: 50px;
+    border-right-color: brown;
+    border-top-color: #8B7D7B;
+    border-bottom-color: brown;
+    border-left-color: #8B7D7B;
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+.icon16 {
+    border-radius: 50px;
+    border-right-color: purple;
+    border-top-color: rgb(241, 213, 159);
+    border-bottom-color: purple;
+    border-left-color: rgb(241, 213, 159);
+    border-width: 19px;
+    border-style: solid;
+    height: 0px;
+    width: 0px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Create 2 columns and auto-place rows */
+  }
+
