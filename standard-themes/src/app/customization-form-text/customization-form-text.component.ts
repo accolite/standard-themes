@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Font } from 'ngx-font-picker';
 
 @Component({
   selector: 'app-customization-form-text',
@@ -8,6 +9,17 @@ import { Component, OnInit } from '@angular/core';
 export class CustomizationFormTextComponent implements OnInit {
 
   constructor() { }
+
+  public font: Font = new Font({
+    family: 'Roboto',
+    size: '14px',
+    style: 'regular',
+    styles: ['regular']
+  });
+
+  color: '#2883e9';
+  
+  public sizeSelect: boolean = true;
 
   ngOnInit(): void {
   }

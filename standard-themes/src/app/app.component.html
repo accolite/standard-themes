@@ -1,59 +1,16 @@
-<div class="app-{{appId}}-theme" id="appRootClass">
-  <!-- <div class="grid">
-    <ng-container *ngFor="let theme of themes">
-        <label><button value='theme1' mat-menu-item (click)="switchTheme(theme.label)"><div class="theme.icon" id="iconClass"></div></button></label>
-        <div><input type="checkbox"></div>
-    </ng-container>
-  </div> -->
+<mat-drawer-container class="example-container" autosize>
+
+  <mat-drawer #drawer class="example-sidenav" mode="side" style="width: 500px;">
+    <app-customization-form-text></app-customization-form-text>
+    <button mat-raised-button color="accent" (click)="drawer.toggle()">Close</button>
+  </mat-drawer>
+  
+  <div class="app-{{appId}}-theme" id="appRootClass">
   <mat-toolbar color="primary" class="toptoolbar">
     <mat-toolbar-row>
       <span>Click on the palette to change themes</span>
       <span class="spacer"></span>
       <mat-icon class="icon" data-toggle="modal" data-target="#exampleModal">palette</mat-icon>
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <table class="table table-light table-responsive-xl">
-            <tr>
-              <td><button value='theme1' mat-menu-item (click)="switchTheme('theme1')"><div class="icon1" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme2')"><div class="icon2" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme3')"><div class="icon3" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme4')"><div class="icon4" id="iconClass"></div></button></td>
-            </tr>
-            <tr>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme5')"><div class="icon5" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme6')"><div class="icon6" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme7')"><div class="icon7" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme8')"><div class="icon8" id="iconClass"></div></button></td>
-            </tr>
-            <tr>
-              <td><button value='theme1' mat-menu-item (click)="switchTheme('theme9')"><div class="icon9" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme10')"><div class="icon10" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme11')"><div class="icon11" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme12')"><div class="icon12" id="iconClass"></div></button></td>
-            </tr>
-            <tr>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme13')"><div class="icon13" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme14')"><div class="icon14" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme15')"><div class="icon15" id="iconClass"></div></button></td>
-              <td><button value='theme2' mat-menu-item (click)="switchTheme('theme16')"><div class="icon16" id="iconClass"></div></button></td>
-            </tr>
-        </table>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-outline-primary" (click)="switchTheme('theme1')" data-dismiss="modal">Reset Defaults</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </mat-toolbar-row>
   </mat-toolbar>
   <br/>
@@ -87,9 +44,9 @@
         <input type="checkbox" class="form-check-input" id="exampleCheck1" />
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
       </div>
-      <button type="submit" class="btn btn-outline-success">Submit</button>
-      <button type="button" class="btn btn-outline-primary">Cancel</button>
-      <button type="button" class="btn btn-outline-dark">BACK</button>
+      <button mat-raised-button color="primary">Submit</button>
+      <button mat-raised-button color="accent">Cancel</button>
+      <button mat-raised-button color="warn">BACK</button>
       <br />
     </form>
     <hr />
@@ -116,3 +73,33 @@
     <i class="material-icons">traffic</i>
   </div>
 </div>
+</mat-drawer-container>
+
+<div class="app-{{appId}}-theme">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="grid">
+          <ng-container *ngFor="let theme of (themes | async)">
+              <label><button value='theme1' mat-menu-item (click)="switchTheme(theme.label)"><div class={{theme.icon}} id="iconClass"></div></button></label>
+          </ng-container>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button mat-raised-button color="warn" data-dismiss="modal">Close</button>
+        <button mat-raised-button color="accent" (click)="switchTheme('theme1')" data-dismiss="modal">Reset Defaults</button>
+        <button mat-raised-button color="primary" (click)="drawer.toggle()" data-dismiss="modal">Customize</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+

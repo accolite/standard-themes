@@ -9,6 +9,15 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatListModule } from "@angular/material/list";
 import { CustomizationFormTextComponent } from './customization-form-text/customization-form-text.component';
 import { ColorPickerModule } from 'ngx-color-picker';
+import { HttpClientModule } from '@angular/common/http';
+import { FontPickerModule } from 'ngx-font-picker';
+import { FONT_PICKER_CONFIG } from 'ngx-font-picker';
+import { FontPickerConfigInterface } from 'ngx-font-picker';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+const DEFAULT_FONT_PICKER_CONFIG: FontPickerConfigInterface = {
+  apiKey: 'AIzaSyBR5qH_b4psErMMVZsth_o01VqxI7VKwN8'
+};
 
 @NgModule({
   declarations: [
@@ -24,8 +33,14 @@ import { ColorPickerModule } from 'ngx-color-picker';
     MatMenuModule,
     MatToolbarModule,
     ColorPickerModule,
+    HttpClientModule,
+    FontPickerModule,
+    MatSidenavModule
   ],
-  providers: [],
+  providers: [{
+    provide: FONT_PICKER_CONFIG,
+    useValue: DEFAULT_FONT_PICKER_CONFIG
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

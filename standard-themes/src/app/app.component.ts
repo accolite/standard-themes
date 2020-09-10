@@ -2,6 +2,7 @@ import { Component, ElementRef } from '@angular/core';
 import { Theme } from './Theme.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { Font } from 'ngx-font-picker';
 
 @Component({
   selector: 'app-root',
@@ -15,12 +16,12 @@ export class AppComponent {
   property1 = '--color2';
   property2 = '--color';
   
-  constructor(private elementRef: ElementRef) { }
-  
-  // themes: Observable<Array<Theme>> = this.http.get<Array<Theme>>("assets/themes.json");
+  constructor(private elementRef: ElementRef, private http : HttpClient) { }
+
+  themes: Observable<Array<Theme>> = this.http.get<Array<Theme>>("assets/themes.json");
   
   switchTheme(appId: string) {
-    this.appId = appId; 
+    this.appId = appId;
   }
 
   changeTheme(){
